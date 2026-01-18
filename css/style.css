@@ -324,6 +324,12 @@ section.active {
     color: var(--main-color)
 }
 
+.services{
+    border: 1px solid red;
+    padding: 20px;
+
+}
+
 .services-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
