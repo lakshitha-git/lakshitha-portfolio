@@ -44,6 +44,7 @@ header {
     z-index: 100;
     visibility: hidden;
     opacity: 0;
+    border: 1px solid red;
 }
 
 header.active{
@@ -126,9 +127,10 @@ nav a.active {
 }
 
 section {
+    margin-top: 20px;
     position: absolute;
     width: 100%;
-    height: auto;
+    height: 100%;
     padding: 10rem 9% 2rem;
     visibility: hidden;
     opacity: 0;
