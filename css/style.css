@@ -23,7 +23,6 @@ html {
 
 body {
     color: var(--white-color);
-    overflow: hidden;
 }
 
 .p-name{
@@ -125,12 +124,10 @@ nav a.active {
 }
 
 section {
-    margin-top: 20px;
-    margin-bottom: 20px;
     position: absolute;
     width: 100%;
     height: 100%;
-    padding: 10rem 9% 10rem;
+    padding: 10rem 9% 2rem;
     visibility: hidden;
     opacity: 0;
     overflow: hidden;
@@ -322,12 +319,6 @@ section.active {
 
 .heading span {
     color: var(--main-color)
-}
-
-.services{
-    border: 1px solid red;
-    padding: 20px;
-
 }
 
 .services-container {
