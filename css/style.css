@@ -90,10 +90,11 @@ nav a.active {
 }
 
 .bars-box .bar{
-    width: 20%;
+    width: 100%;
     height: 100%;
     background: var(--bg-color);
-    transform: translateY(0);
+    animation: hide-bars .5s ease-in-out both;
+    animation-delay: calc(.1s * var(--i));
 }
 
 @keyframes hide-bars {
@@ -108,7 +109,7 @@ nav a.active {
 }
 
 .bars-box.active .bar{
-    animation: hide-bars .5s ease-in-out both;
+    animation: show-bars .5s ease-in-out both;
     animation-delay: calc(.1s * var(--i));
 }
 
@@ -821,7 +822,14 @@ section.active {
     #menu-icon{
         display: block;
     }
+    section {
+        padding-top: 12rem; /* Increase top padding for mobile */
+    }
 
+    /* When nav is active (expanded), add more padding */
+    nav.active ~ section {
+        padding-top: 15rem;
+    }
     nav{
         position: absolute;
         top: 100%;
