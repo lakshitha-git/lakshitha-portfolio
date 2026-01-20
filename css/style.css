@@ -400,6 +400,10 @@ section.active {
     font-size: 1.6rem;
 }
 
+.resume{
+    height: max-content;
+}
+
 .resume-container {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -576,6 +580,10 @@ section.active {
     font-size: 1.8rem;
 }
 
+.portfolio{
+    height: max-content;
+}
+
 .portfolio-container{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -712,6 +720,10 @@ section.active {
 
 .portfolio-box .navigation .arrow-right{
     margin-left: 1.5rem;
+}
+
+.contact{
+    height: max-content;
 }
 
 .contact-container{
