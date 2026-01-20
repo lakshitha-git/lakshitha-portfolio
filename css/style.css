@@ -15,20 +15,15 @@
     --main-color: #7cf03d;
     --white-color: #fff;
     --disabled-color: #fff3;
-    --header-height:7rem;
 }
 
-html,body {
+html {
     font-size: 62.5%;
-    width: 100%;
-    min-height: 100%;
-    overflow-x: hidden;
 }
 
 body {
     color: var(--white-color);
     background: var(--bg-color);
-
 }
 
 .p-name{
@@ -40,7 +35,6 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    height: var(--header-height);
     padding: 2rem 9%;
     background: var(--bg-color);
     display: flex;
@@ -131,15 +125,13 @@ nav a.active {
 }
 
 section {
-    position: relative;
+    position: absolute;
     width: 100%;
-    min-height: 100vh;
-    min-height: 100svh;
-    padding: calc(var(--header-height) + 3rem) 9% 2rem;
+    height: 100%;
+    padding: 10rem 9% 2rem;
     visibility: hidden;
     opacity: 0;
-    overflow-x: hidden;
-    overflow-y: visible;
+    overflow: hidden;
 }
 
 @keyframes show-content {
