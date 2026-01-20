@@ -823,12 +823,12 @@ section.active {
         display: block;
     }
     section {
-        padding-top: 12rem; /* Increase top padding for mobile */
+        padding-top: 50rem; /* Increase top padding for mobile */
     }
 
     /* When nav is active (expanded), add more padding */
     nav.active ~ section {
-        padding-top: 15rem;
+        padding-top: 50rem;
     }
     nav{
         position: absolute;
