@@ -127,7 +127,7 @@ nav a.active {
 section {
     position: absolute;
     width: 100%;
-    height:fit-content;
+    height:auto;
     padding: 15rem 9% 2rem;
     visibility: hidden;
     opacity: 0;
