@@ -127,7 +127,8 @@ nav a.active {
 section {
     position: absolute;
     width: 100%;
-    padding: 15rem 9% 2rem;
+    height: 100%;
+    padding: 10rem 9% 2rem;
     visibility: hidden;
     opacity: 0;
     overflow: hidden;
@@ -152,6 +153,7 @@ section.active {
     display: flex;
     align-items: center;
     gap: 5rem;
+    height: max-content;
 }
 
 .home-detail h1 {
