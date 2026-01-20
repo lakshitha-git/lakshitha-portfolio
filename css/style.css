@@ -23,6 +23,7 @@ html {
 
 body {
     color: var(--white-color);
+    background: var(--bg-color);
 }
 
 .p-name{
