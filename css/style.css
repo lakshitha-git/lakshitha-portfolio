@@ -153,6 +153,7 @@ section.active {
     display: flex;
     align-items: center;
     gap: 5rem;
+    height: fit-content;
 }
 
 .home-detail h1 {
@@ -324,9 +325,6 @@ section.active {
     color: var(--main-color)
 }
 
-.services{
-}
-
 .services-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -396,9 +394,6 @@ section.active {
 
 .services-box p {
     font-size: 1.6rem;
-}
-
-.resume{
 }
 
 .resume-container {
@@ -577,9 +572,6 @@ section.active {
     font-size: 1.8rem;
 }
 
-.portfolio{
-}
-
 .portfolio-container{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -716,9 +708,6 @@ section.active {
 
 .portfolio-box .navigation .arrow-right{
     margin-left: 1.5rem;
-}
-
-.contact{
 }
 
 .contact-container{
