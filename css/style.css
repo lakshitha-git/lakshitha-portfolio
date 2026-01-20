@@ -152,7 +152,6 @@ section.active {
     display: flex;
     align-items: center;
     gap: 5rem;
-    height: max-content;
 }
 
 .home-detail h1 {
