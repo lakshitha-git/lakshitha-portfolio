@@ -227,14 +227,12 @@ section.active {
     display: inline-block;
     padding: 1rem 3rem;
     background: linear-gradient(45deg, var(--main-color), var(--accent-color));
-    border: .2rem solid transparent;
     border-radius: 4rem;
     box-shadow: 0 0 15px rgba(0, 229, 255, 0.4);
     font-size: 1.6rem;
     color: var(--bg-color);
     font-weight: 600;
     transition: .5s;
-    background-clip: padding-box;
     position: relative;
 }
 
@@ -855,13 +853,9 @@ section.active {
         display: block;
     }
     .home {
-        padding-top: 30rem; /* Increase top padding for mobile */
+        padding-top: 10rem;
     }
 
-    /* When nav is active (expanded), add more padding */
-    nav.active ~ .home {
-        padding-top: 30rem;
-    }
     nav{
         position: absolute;
         top: 100%;
