@@ -906,6 +906,23 @@ section.active {
         grid-template-columns: 1fr;
     }
 
+    .portfolio-box .portfolio-carousel {
+        height: auto;
+    }
+
+    .portfolio-carousel .img-slide {
+        height: auto;
+    }
+
+    .portfolio-carousel .img-item {
+        height: auto;
+    }
+
+    .portfolio-carousel .img-item img {
+        width: 100%;
+        height: auto;
+    }
+
     .resume-container{
         gap: 3rem;
     }
