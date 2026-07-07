@@ -126,3 +126,146 @@ arrowLeft.addEventListener('click',()=>{
 function downloadCV(){
     alert("This feature is not currently working. Coming soon..!");
 }
+
+// Typed.js Initialization
+const typed = new Typed('.typing-text', {
+    strings: ['UI/UX Designer', 'Frontend Developer', 'Backend Developer', 'Fullstack Developer'],
+    typeSpeed: 70,
+    backSpeed: 50,
+    backDelay: 1000,
+    loop: true
+});
+
+// Particles.js Initialization
+particlesJS("particles-js", {
+    "particles": {
+        "number": {
+            "value": 80,
+            "density": {
+                "enable": true,
+                "value_area": 800
+            }
+        },
+        "color": {
+            "value": ["#00e5ff", "#b026ff"]
+        },
+        "shape": {
+            "type": "circle"
+        },
+        "opacity": {
+            "value": 0.5,
+            "random": true,
+            "anim": {
+                "enable": true,
+                "speed": 1,
+                "opacity_min": 0.1,
+                "sync": false
+            }
+        },
+        "size": {
+            "value": 3,
+            "random": true,
+            "anim": {
+                "enable": true,
+                "speed": 2,
+                "size_min": 0.1,
+                "sync": false
+            }
+        },
+        "line_linked": {
+            "enable": true,
+            "distance": 150,
+            "color": "#00e5ff",
+            "opacity": 0.2,
+            "width": 1
+        },
+        "move": {
+            "enable": true,
+            "speed": 1.5,
+            "direction": "none",
+            "random": true,
+            "straight": false,
+            "out_mode": "out",
+            "bounce": false
+        }
+    },
+    "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+            "onhover": {
+                "enable": true,
+                "mode": "grab"
+            },
+            "onclick": {
+                "enable": true,
+                "mode": "push"
+            },
+            "resize": true
+        },
+        "modes": {
+            "grab": {
+                "distance": 140,
+                "line_linked": {
+                    "opacity": 0.5
+                }
+            },
+            "push": {
+                "particles_nb": 4
+            }
+        }
+    },
+    "retina_detect": true
+});
+
+// Custom Cursor Logic
+const cursor = document.querySelector('.cursor');
+
+document.addEventListener('mousemove', e => {
+    cursor.style.left = e.clientX + 'px';
+    cursor.style.top = e.clientY + 'px';
+});
+
+const clickables = document.querySelectorAll('a, button, input, textarea, .resume-item, .services-box, .portfolio-box');
+
+clickables.forEach(clickable => {
+    clickable.addEventListener('mouseenter', () => {
+        cursor.classList.add('expand');
+    });
+    clickable.addEventListener('mouseleave', () => {
+        cursor.classList.remove('expand');
+    });
+});
+
+// Lightbox Logic
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+const closeLightbox = document.getElementById('close-lightbox');
+const portfolioImages = document.querySelectorAll('.portfolio-carousel .img-item img');
+
+portfolioImages.forEach(img => {
+    img.addEventListener('click', () => {
+        lightboxImg.src = img.src;
+        lightbox.classList.add('active');
+    });
+});
+
+closeLightbox.addEventListener('click', () => {
+    lightbox.classList.remove('active');
+});
+
+lightbox.addEventListener('click', (e) => {
+    if (e.target !== lightboxImg) {
+        lightbox.classList.remove('active');
+    }
+});
+
+const newClickables = document.querySelectorAll('#close-lightbox, .portfolio-carousel .img-item img');
+newClickables.forEach(clickable => {
+    clickable.addEventListener('mouseenter', () => {
+        cursor.classList.add('expand');
+    });
+    clickable.addEventListener('mouseleave', () => {
+        cursor.classList.remove('expand');
+    });
+});
+
